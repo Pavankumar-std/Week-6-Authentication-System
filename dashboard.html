@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SecureAuth Dashboard</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+
+<header class="topbar">
+
+    <div class="logo">
+        🔐 SecureAuth
+    </div>
+
+    <button
+        class="logout-btn"
+        onclick="logout()">
+
+        Logout
+
+    </button>
+
+</header>
+
+
+<main class="dashboard">
+
+
+    <section class="welcome">
+
+        <h1>
+            Welcome, <span id="userName">User</span> 👋
+        </h1>
+
+        <p>
+            You have successfully logged in.
+        </p>
+
+    </section>
+
+
+    <div class="dashboard-grid">
+
+
+        <!-- Profile -->
+
+        <div class="dashboard-card">
+
+            <h2>👤 My Profile</h2>
+
+            <div class="profile-info">
+
+                <p>
+                    <strong>Name:</strong>
+                    <span id="profileName">Loading...</span>
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <span id="profileEmail">Loading...</span>
+                </p>
+
+                <p>
+                    <strong>Account:</strong>
+                    <span>Active</span>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Activity -->
+
+        <div class="dashboard-card">
+
+            <h2>📊 Recent Activity</h2>
+
+            <div class="activity">
+
+                <p>✅ Login successful</p>
+
+                <p>🔐 Authentication verified</p>
+
+                <p>🕐 Dashboard accessed</p>
+
+                <p>🛡️ Protected route verified</p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- Security -->
+
+    <section class="security-card">
+
+        <h2>🛡️ Security Status</h2>
+
+        <div class="security-items">
+
+            <div>
+                <span>✓</span>
+                Password protected
+            </div>
+
+            <div>
+                <span>✓</span>
+                JWT authentication
+            </div>
+
+            <div>
+                <span>✓</span>
+                Protected API route
+            </div>
+
+            <div>
+                <span>✓</span>
+                Input validation
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        SecureAuth © 2026 | Week 6 Web Development
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
